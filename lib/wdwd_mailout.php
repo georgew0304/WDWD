@@ -38,24 +38,4 @@ class wdwd_mailout {
     return $data;
   }
 }
-
-class mailout extends wdwd_mailout {
-  function __construct(){
-    $this->default_from = 'georgewoodward@hotmail.co.uk';
-    $this->default_subject = 'This was sent out from mailout!';
-    $this->footer = 'This email was automatically sent out by trakify!';
-    $this->logo = 'http://www.underconsideration.com/brandnew/archives/facebook_2015_logo_detail.png';
-    $this->tagline = 'The Ultimate Solution for Pubs, Clubs and Retail Shops.';
-  }
-}
-
-// Let's test this
-$mailout = new mailout();
-$mailout->to = 'georgewoodward95@googlemail.com';
-$mailout->body = '<p>A user has just requested a join your account. Please accept or deny this request in your control panel.</p>';
-
-// See the Results
-echo "<pre>";
-print_r($mailout->send());
-echo "</pre>";
 ?>

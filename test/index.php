@@ -1,6 +1,6 @@
 <?php
 ini_set('display_errors', 1);
-include('fileup/fileup.php');
+include('../lib/wdwd_passgen.php');
 
 
 
